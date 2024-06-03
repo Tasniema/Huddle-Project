@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  padding: 0%;
+  margin: 0%;
+}
+.parent{
+  width: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+    width: 1350px;
+}
+.feature__icon,
+.logo{
+  height: 30px;
+}
+.hero__cta{
+  color: rgb(255, 143, 216);
+  border: 2px solid rgb(255, 143, 216);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 94px;
+  display: flex;
+  height: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero__cta:hover{
+  background-color: rgb(255, 143, 216);
+  color: white;
+}
+.hero{
+  padding: 20px;
+  width: 1120px;
+  display: grid;
+  justify-items: center;
+  justify-content: end;
+  margin:  auto;
+}
+.hero__ct{
+background-color:  rgb(255,82,191);
+text-decoration: none;
+border-radius: 20px;
+color: white;
+width: 200px;
+padding: 10px;
+text-align: center;
+}
+h2{
+  color: rgb(0,37,46);
+  font-weight: bold;
+  font-size: 35px;
+}
+p{
+  width: 450px;
+  padding: 10px;
+}
+.image--fullpage{
+margin: auto;
+width: 800px;
+height: 500px;
+display: block;
+padding: 10px;
+}
+.features{
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1300px;
+}
+
+span{
+  display: grid;
+  color: rgb(0,37,46);
+  font-size: 50px;
+  font-weight: bold;
+}
+.father{
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.card{
+  width: 1300px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  position: relative;
+  background: rgb(245,250,255);
+  transform: scale(1, 1);
+  margin: 25px;
+  animation-name: slideLeftReturn;
+  animation-duration: 1s;
+}
+@keyframes slideLeftReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+.item{
+  width:  400px;
+  height: 400px;
+}
+.three{
+  width: 1300px;
+  height: 550px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation-name:  slideRightReturn;
+  animation-duration: 1s;
+}
+@keyframes slideRightReturn {
+  0% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+}
+
+.wave{
+  position: relative;
+}
+.last{
+  margin: auto;
+  text-align: center;
+  width: 1300px;
+  padding: 30px;
+  animation-name: swashIn;
+  animation-duration: 1s;
+}
+@keyframes swashIn {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0, 0);
+    transform: scale(0, 0);
+  }
+
+  90% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+  }
+}
+
+button{
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  background-color: rgb(255,82,191);
+  border-radius: 20px;
+}
+button:hover{
+  background-color: white;
+  color: rgb(255,82,191);
+  border: 2px solid rgb(255,82,191);
+}
+footer{
+  background-color: rgb(0, 37, 46);
+  height: 337px;
+  padding: 20px;
+  color: white;
+  display: grid;
+  justify-content: center;
+  width: 1350px;
+}
+.footer-1{
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  padding: 50px;
+  gap: 100px;
+}
+.booton{
+  font-size: 18px;
+  color: white;
+  border: none;
+  background-color: rgb(255, 82, 191);
+  border-radius: 5px;
+  height: 25px;
+  width: 100px;
+  padding: 2px;
+  margin: 10px;
+}
+input{
+  font-size: 18px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  height: 21px;
+  width: 170px;
+  padding: 2px;
+}
+.prag{
+  width: 500px;
+}
+.number{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+.My-element {
+  animation-name: puffIn;
+  animation-duration: 1s;
+}
+@keyframes puffIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.5, 1);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+    filter: blur(0px);
+  }
+}
